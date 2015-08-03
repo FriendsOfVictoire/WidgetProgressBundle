@@ -1,5 +1,5 @@
 services:
-    victoire_core.widget_menu_content_resolver:
+    victoire_core.widget_progress_content_resolver:
         class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Progress }
