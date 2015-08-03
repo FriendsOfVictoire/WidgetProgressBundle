@@ -1,0 +1,20 @@
+services:
+    victoire_core.widget_menu_content_resolver:
+        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: Progress }
+
+    #alias to the entity
+    victoire.widget.progress:
+        class: Victoire\Widget\ProgressBundle\Entity\WidgetProgress
+
+    #alias to the form
+    victoire.widget.form.progress:
+        class: Victoire\Widget\ProgressBundle\Form\WidgetProgressType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_progress }
+
+    victoire.widget.twig.tests_extension:
+        class: Victoire\Widget\ProgressBundle\Twig\TestsExtension
+        tags:
+            - { name: twig.extension }

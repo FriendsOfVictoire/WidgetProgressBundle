@@ -1,0 +1,26 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+{% block content %}
+    <div class="progress">
+        {% set percent = (maximumValue != 0) ? currentValue * 100 / maximumValue : 100 %}
+        {% set percent = (percent > 100) ? 100 : percent %}
+        {% set attributes = {
+            class:  "progress-bar" ~
+                    ((style is defined and style) ? " progress-bar-#{style}" : "") ~
+                    ((striped is defined and striped) ? "  progress-bar-striped" : "") ~
+                    ((animated is defined and animated) ? " active" : ""),
+            role: "progressbar",
+            "aria-valuenow": currentValue,
+            "aria-valuemin": minimumValue,
+            "aria-valuemax": maximumValue,
+            style: "width: #{percent}%"
+        } %}
+        <div{% for attr,value in attributes %} {{ attr }}="{{ value }}"{% endfor %}>
+        {% if labelVisible is defined and labelVisible %}
+            {{ currentValue }} {{ displayedValue|default('')|trans({}, 'widgetProgress')|raw }}
+        {% else %}
+            <span class="sr-only">{{ currentValue }} {{ displayedValue|default('')|trans({}, 'widgetProgress')|raw }}</span>
+        {% endif %}
+        </div>
+    </div>
+{% endblock content %}

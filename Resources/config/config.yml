@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        Progress:
+            class: "Victoire\\Widget\\ProgressBundle\\Entity\\WidgetProgress"
+            name: Progress
+            
+jms_translation:
+    configs:
+        victoire_progress_bundle:
+            dirs: ["@VictoireProgressBundle"]
+            output_dir: "@VictoireProgressBundle/Resources/translations"

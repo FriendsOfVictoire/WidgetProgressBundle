@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="1" resname="widget.progress.new.action.label">
+        <source>widget.progress.new.action.label</source>
+        <target state="new">Progress</target>
+      </trans-unit>
+      <trans-unit id="2" resname="modal.form.widget.type.progress.label">
+        <source>modal.form.widget.type.progress.label</source>
+        <target state="new">Progress</target>
+      </trans-unit>
+      <trans-unit id="3" resname="widget_progress.form.minimumValue.label">
+        <source>widget_progress.form.minimumValue.label</source>
+        <target state="new">minimum value</target>
+      </trans-unit>
+      <trans-unit id="4" resname="widget_progress.form.maximumValue.label">
+        <source>widget_progress.form.maximumValue.label</source>
+        <target state="new">maximum value</target>
+      </trans-unit>
+      <trans-unit id="5" resname="widget_progress.form.currentValue.label">
+        <source>widget_progress.form.currentValue.label</source>
+        <target state="new">current value</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget_progress.form.displayedValue.label">
+        <source>widget_progress.form.displayedValue.label</source>
+        <target state="new">unit</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget.progress.form.choice.style.label.success">
+        <source>widget.progress.form.choice.style.label.success</source>
+        <target>Success</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget.progress.form.choice.style.label.info">
+        <source>widget.progress.form.choice.style.label.info</source>
+        <target>Info</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget.progress.form.choice.style.label.warning">
+        <source>widget.progress.form.choice.style.label.warning</source>
+        <target>Warning</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget.progress.form.choice.style.label.danger">
+        <source>widget.progress.form.choice.style.label.danger</source>
+        <target>Danger</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget.progress.form.striped.label">
+        <source>widget.progress.form.striped.label</source>
+        <target>Striped ?</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget.progress.form.animated.label">
+        <source>widget.progress.form.animated.label</source>
+        <target>Animated ?</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget.progress.form.label.visible.label">
+        <source>widget.progress.form.label.visible.label</source>
+        <target>Display the value ?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
