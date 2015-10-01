@@ -57,9 +57,11 @@ class WidgetProgressType extends WidgetType
             $builder
                 ->add('maximumValue', null, array(
                     'label' => 'widget_progress.form.maximumValue.label',
+                    'required' => true
                 ))
                 ->add('currentValue', null, array(
                     'label' => 'widget_progress.form.currentValue.label',
+                    'required' => true
                 ))
             ;
         }
