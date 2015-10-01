@@ -25,7 +25,7 @@ class WidgetProgress extends Widget
      * @var integer
      *
      * @VIC\ReceiverProperty("numberable")
-     * @ORM\Column(name="maximumValue", type="integer")
+     * @ORM\Column(name="maximumValue", type="integer", nullable=true)
      */
     protected $maximumValue;
 
@@ -33,7 +33,7 @@ class WidgetProgress extends Widget
      * @var integer
      *
      * @VIC\ReceiverProperty("numberable")
-     * @ORM\Column(name="currentValue", type="integer")
+     * @ORM\Column(name="currentValue", type="integer", nullable=true)
      */
     protected $currentValue;
 
