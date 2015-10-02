@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="5" resname="widget_progress.form.currentValue.label">
         <source>widget_progress.form.currentValue.label</source>
-        <target state="new">value actuelle</target>
+        <target state="new">valeur actuelle</target>
       </trans-unit>
       <trans-unit id="6" resname="widget_progress.form.displayedValue.label">
         <source>widget_progress.form.displayedValue.label</source>
