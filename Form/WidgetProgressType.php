@@ -80,7 +80,7 @@ class WidgetProgressType extends WidgetType
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\ProgressBundle\Entity\WidgetProgress',
             'widget'             => 'Progress',
-            'translation_domain' => 'victoire'
+            'translation_domain' => 'victoire',
         ]);
     }
 

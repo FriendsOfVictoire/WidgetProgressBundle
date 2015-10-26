@@ -84,7 +84,6 @@ class WidgetProgress extends Widget
         return 'Progress #'.$this->id;
     }
 
-
     /**
      * Set minimumValue.
      *
