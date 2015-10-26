@@ -1,4 +1,5 @@
 <?php
+
 namespace Victoire\Widget\ProgressBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -6,23 +7,22 @@ use Victoire\Bundle\CoreBundle\Annotations as VIC;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetProgress
+ * WidgetProgress.
  *
  * @ORM\Table("vic_widget_progress")
  * @ORM\Entity
  */
 class WidgetProgress extends Widget
 {
-
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(name="minimumValue", type="integer")
      */
     protected $minimumValue;
 
     /**
-     * @var integer
+     * @var int
      *
      * @VIC\ReceiverProperty("numberable")
      * @ORM\Column(name="maximumValue", type="integer", nullable=true)
@@ -30,7 +30,7 @@ class WidgetProgress extends Widget
     protected $maximumValue;
 
     /**
-     * @var integer
+     * @var int
      *
      * @VIC\ReceiverProperty("numberable")
      * @ORM\Column(name="currentValue", type="integer", nullable=true)
@@ -45,7 +45,7 @@ class WidgetProgress extends Widget
     protected $displayedValue;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="labelVisible", type="boolean", nullable=true)
      */
@@ -59,14 +59,14 @@ class WidgetProgress extends Widget
     protected $style;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="stripped", type="boolean", nullable=true)
      */
     protected $striped;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="animated", type="boolean", nullable=true)
      */
@@ -75,9 +75,9 @@ class WidgetProgress extends Widget
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent
+     * //TODO Check the generated value and make it more consistent.
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
@@ -86,7 +86,7 @@ class WidgetProgress extends Widget
 
 
     /**
-     * Set minimumValue
+     * Set minimumValue.
      *
      * @param string $minimumValue
      */
@@ -98,7 +98,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Get minimumValue
+     * Get minimumValue.
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Set maximumValue
+     * Set maximumValue.
      *
      * @param string $maximumValue
      */
@@ -120,7 +120,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Get maximumValue
+     * Get maximumValue.
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Set currentValue
+     * Set currentValue.
      *
      * @param string $currentValue
      */
@@ -142,7 +142,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Get currentValue
+     * Get currentValue.
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Set displayedValue
+     * Set displayedValue.
      *
      * @param string $displayedValue
      */
@@ -164,7 +164,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Get displayedValue
+     * Get displayedValue.
      *
      * @return string
      */
@@ -174,9 +174,9 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Set labelVisible
+     * Set labelVisible.
      *
-     * @param boolean $labelVisible
+     * @param bool $labelVisible
      *
      * @return WidgetProgress
      */
@@ -188,9 +188,9 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Get striped
+     * Get striped.
      *
-     * @return boolean
+     * @return bool
      */
     public function getLabelVisible()
     {
@@ -198,7 +198,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Set style
+     * Set style.
      *
      * @param string $style
      *
@@ -212,7 +212,7 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Get style
+     * Get style.
      *
      * @return string
      */
@@ -222,9 +222,9 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Set stripped
+     * Set stripped.
      *
-     * @param boolean $striped
+     * @param bool $striped
      *
      * @return WidgetProgress
      */
@@ -236,9 +236,9 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Get striped
+     * Get striped.
      *
-     * @return boolean
+     * @return bool
      */
     public function getStriped()
     {
@@ -246,9 +246,9 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Set animated
+     * Set animated.
      *
-     * @param boolean $animated
+     * @param bool $animated
      *
      * @return WidgetProgress
      */
@@ -260,13 +260,12 @@ class WidgetProgress extends Widget
     }
 
     /**
-     * Get striped
+     * Get striped.
      *
-     * @return boolean
+     * @return bool
      */
     public function getAnimated()
     {
         return $this->animated;
     }
-
 }
