@@ -1,18 +1,19 @@
 <?php
+
 namespace Victoire\Widget\ProgressBundle\Twig;
 
 class TestsExtension extends \Twig_Extension
 {
     public function getFunctions()
     {
-        return array(
+        return [
             'isNumber' => new \Twig_Filter_Method($this, 'isNumberFunction'),
-        );
+        ];
     }
 
     public function isNumberFunction($var)
     {
-        return (is_integer($var) || is_float($var) || is_double($var)) ? true : false;
+        return (is_int($var) || is_float($var) || is_float($var)) ? true : false;
     }
 
     public function getName()
