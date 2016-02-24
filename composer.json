@@ -1,29 +1,27 @@
 {
-    "name"             : "friendsofvictoire/progress-widget",
-    "type"             : "symfony-bundle",
-    "description"      : "Victoire DCMS Progress widget",
-    "keywords"         : [
+    "name": "friendsofvictoire/progress-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire DCMS Progress widget",
+    "keywords": [
         "DCMS",
         "Victoire",
         "widget",
         "FriendsofVictoire",
         "Progress"
     ],
-    "homepage"         : "http://victoire.io",
-    "license"          : "MIT",
-    "require"          : {
-        "php"                     : ">=5.3.3",
-        "symfony/framework-bundle": "~2.3",
-        "victoire/victoire"       : "~1.3"
+    "homepage": "http://victoire.io",
+    "license": "MIT",
+    "require": {
+        "victoire/victoire": "~1.5"
     },
-    "autoload"         : {
+    "autoload": {
         "psr-0": {
             "Victoire\\Widget\\ProgressBundle": ""
         }
     },
     "minimum-stability": "dev",
-    "target-dir"       : "Victoire/Widget/ProgressBundle",
-    "extra"            : {
+    "target-dir": "Victoire/Widget/ProgressBundle",
+    "extra": {
         "branch-alias": {
             "dev-master": "1.3.x-dev"
         }

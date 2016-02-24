@@ -2,8 +2,10 @@
 
 namespace Victoire\Widget\ProgressBundle\Form;
 
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
@@ -22,25 +24,25 @@ class WidgetProgressType extends WidgetType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('labelVisible', 'checkbox', [
+            ->add('labelVisible', CheckboxType::class, [
                 'label'    => 'widget.progress.form.label.visible.label',
                 'required' => false,
             ])
-            ->add('striped', 'checkbox', [
+            ->add('striped', CheckboxType::class, [
                 'label'    => 'widget.progress.form.striped.label',
                 'required' => false,
             ])
-            ->add('animated', 'checkbox', [
+            ->add('animated', CheckboxType::class, [
                 'label'    => 'widget.progress.form.animated.label',
                 'required' => false,
             ])
-            ->add('style', 'choice', [
+            ->add('style', ChoiceType::class, [
                 'label'   => 'widget.button.form.label.style',
                 'choices' => [
-                    'success' => 'widget.progress.form.choice.style.label.success',
-                    'info'    => 'widget.progress.form.choice.style.label.info',
-                    'warning' => 'widget.progress.form.choice.style.label.warning',
-                    'danger'  => 'widget.progress.form.choice.style.label.danger',
+                    'widget.progress.form.choice.style.label.success' => 'success',
+                    'widget.progress.form.choice.style.label.info' => 'info',
+                    'widget.progress.form.choice.style.label.warning' => 'warning',
+                    'widget.progress.form.choice.style.label.danger' => 'danger',
                 ],
                 'required' => false,
             ])
@@ -72,8 +74,9 @@ class WidgetProgressType extends WidgetType
      * bind form to WidgetProgress entity.
      *
      * @param OptionsResolverInterface $resolver
+     * @param OptionsResolver $resolver
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
         parent::setDefaultOptions($resolver);
 
@@ -82,15 +85,5 @@ class WidgetProgressType extends WidgetType
             'widget'             => 'Progress',
             'translation_domain' => 'victoire',
         ]);
-    }
-
-    /**
-     * get form name.
-     *
-     * @return string The form name
-     */
-    public function getName()
-    {
-        return 'victoire_widget_form_progress';
     }
 }
