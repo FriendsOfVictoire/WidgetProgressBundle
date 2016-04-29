@@ -40,9 +40,9 @@ class WidgetProgressType extends WidgetType
                 'label'   => 'widget.button.form.label.style',
                 'choices' => [
                     'widget.progress.form.choice.style.label.success' => 'success',
-                    'widget.progress.form.choice.style.label.info' => 'info',
+                    'widget.progress.form.choice.style.label.info'    => 'info',
                     'widget.progress.form.choice.style.label.warning' => 'warning',
-                    'widget.progress.form.choice.style.label.danger' => 'danger',
+                    'widget.progress.form.choice.style.label.danger'  => 'danger',
                 ],
                 'required' => false,
             ])
@@ -74,6 +74,7 @@ class WidgetProgressType extends WidgetType
      * bind form to WidgetProgress entity.
      *
      * @param OptionsResolverInterface $resolver
+     *
      * @param OptionsResolver $resolver
      */
     public function configureOptions(OptionsResolver $resolver)
