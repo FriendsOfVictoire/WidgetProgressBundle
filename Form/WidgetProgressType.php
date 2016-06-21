@@ -73,12 +73,11 @@ class WidgetProgressType extends WidgetType
     /**
      * bind form to WidgetProgress entity.
      *
-     * @param OptionsResolverInterface $resolver
      * @param OptionsResolver $resolver
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-        parent::setDefaultOptions($resolver);
+        parent::configureOptions($resolver);
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\ProgressBundle\Entity\WidgetProgress',

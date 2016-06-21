@@ -3,6 +3,9 @@ services:
         class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Progress }
+    #alias to the entity
+    victoire.widget.progress:
+        class: Victoire\Widget\ProgressBundle\Entity\WidgetProgress
 
     #alias to the form
     victoire.widget.form.progress:
