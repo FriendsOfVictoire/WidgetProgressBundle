@@ -12,18 +12,12 @@
     "homepage": "http://victoire.io",
     "license": "MIT",
     "require": {
-        "victoire/victoire": "~1.5"
+        "victoire/victoire": ">=2.0.0"
     },
     "autoload": {
         "psr-0": {
             "Victoire\\Widget\\ProgressBundle": ""
         }
     },
-    "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/ProgressBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.3.x-dev"
-        }
-    }
+    "target-dir": "Victoire/Widget/ProgressBundle"
 }
