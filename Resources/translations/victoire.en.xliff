@@ -30,31 +30,31 @@
         <source>widget_progress.form.displayedValue.label</source>
         <target state="new">unit</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget.progress.form.choice.style.label.success">
+      <trans-unit id="7" resname="widget.progress.form.choice.style.label.success">
         <source>widget.progress.form.choice.style.label.success</source>
         <target>Success</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget.progress.form.choice.style.label.info">
+      <trans-unit id="8" resname="widget.progress.form.choice.style.label.info">
         <source>widget.progress.form.choice.style.label.info</source>
         <target>Info</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget.progress.form.choice.style.label.warning">
+      <trans-unit id="9" resname="widget.progress.form.choice.style.label.warning">
         <source>widget.progress.form.choice.style.label.warning</source>
         <target>Warning</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget.progress.form.choice.style.label.danger">
+      <trans-unit id="10" resname="widget.progress.form.choice.style.label.danger">
         <source>widget.progress.form.choice.style.label.danger</source>
         <target>Danger</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget.progress.form.striped.label">
+      <trans-unit id="11" resname="widget.progress.form.striped.label">
         <source>widget.progress.form.striped.label</source>
         <target>Striped ?</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget.progress.form.animated.label">
+      <trans-unit id="12" resname="widget.progress.form.animated.label">
         <source>widget.progress.form.animated.label</source>
         <target>Animated ?</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget.progress.form.label.visible.label">
+      <trans-unit id="13" resname="widget.progress.form.label.visible.label">
         <source>widget.progress.form.label.visible.label</source>
         <target>Display the value ?</target>
       </trans-unit>
